@@ -32,7 +32,7 @@ var moviesTitleHtml = "snippets/movies-title.html";
 var movieHtml = "snippets/movie.html";
 
 var awardsHtml = "snippets/awards.html";
-
+var aboutHtml = "snippets/about.html";
 
 
 // Convenience function for inserting innerHTML for 'select'
@@ -149,11 +149,14 @@ dc.loadMovies = function (categoryShort) {
 
 
 // Load About view
-dc.loadAbout = function (categoryShort) {
-  showLoading("#main-content");
+dc.loadAbout = function () {
   $ajaxUtils.sendGetRequest(
-    moviesUrl + categoryShort,
-    buildAndShowMoviesHTML);
+    aboutHtml, function (aboutHtml) {
+      switchAboutToActive();
+      var aboutViewHtml = buildAboutViewHtml(aboutHtml);
+      insertHtml("#main-content", aboutViewHtml);
+    }, false);
+  
 };
 
 // Load Awards view
@@ -200,6 +203,13 @@ function buildAndShowCategoriesHTML (categories) {
 
 function buildAwardsViewHtml(awardHtml) {
   var finalHtml = awardHtml;
+  finalHtml += "<section class='row'>";
+  finalHtml += "</section>";
+  return finalHtml;
+}
+
+function buildAboutViewHtml(aboutHtml) {
+  var finalHtml = aboutHtml;
   finalHtml += "<section class='row'>";
   finalHtml += "</section>";
   return finalHtml;
