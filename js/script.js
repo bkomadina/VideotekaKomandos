@@ -148,7 +148,7 @@ dc.loadMovies = function (categoryShort) {
 };
 
 
-// Load About view
+// Load About view 
 dc.loadAbout = function () {
   $ajaxUtils.sendGetRequest(
     aboutHtml, function (aboutHtml) {
