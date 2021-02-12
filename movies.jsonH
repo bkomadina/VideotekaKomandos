@@ -1,0 +1,39 @@
+{
+  "movies": [
+    {
+      "id": 51,
+      "short_name": "H1",
+      "name": "The Descent",
+      "description": "Main character decideds to go on a hike with her friends when things start to get ugly",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 52,
+      "short_name": "H2",
+      "name": "Scream",
+      "description": "Follows a series of murders commited by a masked person",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 53,
+      "short_name": "H3",
+      "name": "Get out",
+      "description": "While wisiting his girlfriends parents, things start to get wierd for the main character",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    }
+  ],
+  "category": {
+    "short_name": "H",
+    "name": "Horror",
+    "special_instructions": "Deliberately scare or frighten the audience, through suspense, violence or shock"
+  }
+}

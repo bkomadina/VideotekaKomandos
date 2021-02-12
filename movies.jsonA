@@ -1,0 +1,39 @@
+{
+  "movies": [
+    {
+      "id": 11,
+      "short_name": "A1",
+      "name": "Guns Akimbo",
+      "description": "Starring Daniel Redcliff as an everyday code monkey who gets guns pinned to his arms and fights for survival",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 12,
+      "short_name": "A2",
+      "name": "Crank",
+      "description": "Jasson Statham goes on a rampage",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 13,
+      "short_name": "A3",
+      "name": "Kingsman: The Secret Service",
+      "description": "A young brittish teenager is being offered an interesting job opportunity which sets him on a way of becoming a spy",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    }
+  ],
+  "category": {
+    "short_name": "A",
+    "name": "Action",
+    "special_instructions": "Movies packed with shooting, fighting and other actions scenes"
+  }
+}

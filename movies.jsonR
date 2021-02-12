@@ -1,0 +1,39 @@
+{
+  "movies": [
+    {
+      "id": 61,
+      "short_name": "R1",
+      "name": "500 days of summer",
+      "description": "500 days of falling in love, getting over it and dealing with consequences",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 62,
+      "short_name": "R2",
+      "name": "Palm Springs",
+      "description": "Series of events makes a guy and a girl stick together for a long time",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 63,
+      "short_name": "R3",
+      "name": "Crazy Stupid Love",
+      "description": "After his wife leaves him, the main character tries to reastablish his manhood",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    }
+  ],
+  "category": {
+    "short_name": "R",
+    "name": "Romance",
+    "special_instructions": "Love stories that primarily focus on the relationship between the main character"
+  }
+}

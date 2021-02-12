@@ -1,0 +1,184 @@
+{
+  "movies": [
+    {
+      "id": 11,
+      "short_name": "A1",
+      "name": "Guns Akimbo",
+      "description": "Starring Daniel Redcliff as an everyday code monkey who gets guns pinned to his arms and fights for survival. Starring Daniel Redcliff as an everyday code monkey who gets guns pinned to his arms and fights for survival. Starring Daniel Redcliff as an everyday code monkey who gets guns pinned to his arms and fights for survival.",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 12,
+      "short_name": "A2",
+      "name": "Crank",
+      "description": "Jasson Statham goes on a rampage",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 13,
+      "short_name": "A3",
+      "name": "Kingsman",
+      "description": "A young brittish teenager is being offered an interesting job opportunity which sets him on a way of becoming a spy",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 21,
+      "short_name": "C1",
+      "name": "American Pie",
+      "description": "High school graduates try to loose their virginity before prom",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 22,
+      "short_name": "C2",
+      "name": "Monty Python and The Holy Grail",
+      "description": "Group of crusaders go on a sacred quest to recover the Holy Grail",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 23,
+      "short_name": "C3",
+      "name": "Meet the Spartans",
+      "description": "Trashy parody",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 31,
+      "short_name": "D1",
+      "name": "Scarface",
+      "description": "In search for a better future, a man comes to US trying to live the dream",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 32,
+      "short_name": "D2",
+      "name": "Shawshank Redemption",
+      "description": "Follows a prissoners life through his serving years",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 33,
+      "short_name": "D3",
+      "name": "12 angry men",
+      "description": "12 man gather to decide about a young mans trial",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 41,
+      "short_name": "F1",
+      "name": "Lord of the rings",
+      "description": "A fantasy trilogy about good guys trying to stop the One ring",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 42,
+      "short_name": "F2",
+      "name": "Dune",
+      "description": "In the distant future, ona a desolate planet, noble houses fight for survival and power",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 43,
+      "short_name": "F3",
+      "name": "Harry Potter",
+      "description": "Young wizard starts his education, at the same time long forgotten evil awakens",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 51,
+      "short_name": "H1",
+      "name": "The Descent",
+      "description": "Main character decideds to go on a hike with her friends when things start to get ugly",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 52,
+      "short_name": "H2",
+      "name": "Scream",
+      "description": "Follows a series of murders commited by a masked person",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 53,
+      "short_name": "H3",
+      "name": "Get out",
+      "description": "While wisiting his girlfriends parents, things start to get wierd for the main character",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 61,
+      "short_name": "R1",
+      "name": "500 days of summer",
+      "description": "500 days of falling in love, getting over it and dealing with consequences",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 62,
+      "short_name": "R2",
+      "name": "Palm Springs",
+      "description": "Series of events makes a guy and a girl stick together for a long time",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 63,
+      "short_name": "R3",
+      "name": "Crazy, Stupid, Love",
+      "description": "After his wife leaves him, the main character tries to reastablish his manhood",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    }
+  ]
+}

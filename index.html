@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+	<title>Videoteka Komandos</title>
+  </head>
+<body>
+  <header>
+    <nav id="header-nav" class="navbar navbar-default">
+	  <div class="container">
+	    <div class="navbar-header">
+		  <a href="index.html" class="pull-left visible-md visible-lg">
+			<div id="logo-img" alt="Logo image"></div></a>
+		  <div class="navbar-brand">
+		  	<a href="index.html"><h1>Videoteka Komandos</h1></a>
+		  	<p><img src="images/star-k-logo.png" alt="Excellent picks">
+		  		<span>Excellent picks</span>
+		  	</p>
+		 </div>
+		 <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+		 	<span class="sr-only">Toogle navigation</span>
+		 	<span class="icon-bar"></span>
+		 	<span class="icon-bar"></span>
+		 	<span class="icon-bar"></span>
+		 </button>
+		</div>
+		<div id="collapsable-nav" class="collapse navbar-collapse">
+			<ul id="nav-list" class="nav navbar-nav navbar-right">
+				<li id="navHomeButton" class="visible-xs active">
+					<a href="index.html">
+						<span class="glyphicon glyphicon-home"></span> Home</a>
+					</li>
+				<li id="navCategoriesButton">
+				  <a href="#" onclick="$dc.loadCategories();">
+					<span class="glyphicon glyphicon-film"></span><br class="hidden-xs"> Categories</a>
+				</li>
+				<li id="navAboutButton" >
+					<a href="#" onclick="$dc.loadAbout();">
+						<span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a></li>
+				<li id="navAwardsButton">
+					<a href="#" onclick="$dc.loadAwards();">
+						<span class="glyphicon glyphicon-star"></span><br class="hidden-xs"> Awards</a></li>
+				<li id="phone" class="hidden-xs">
+					<a href="tel:777-999-777">
+						<span>777-999-777</span></a><div> Info phone</div></li>
+			</ul>
+			
+		</div>
+	  </div>
+	</nav>	
+  </header>
+
+<div id="call-btn" class="visible-xs">
+	<a class="btn" href="tel:777-999-777">
+		<span class="glyphicon glyphicon-earphone"></span>
+		777-999-777
+	</a>
+</div>
+<div id="xs-info-phone" class="text-center visible-xs"> Info phone</div>
+
+<div id="main-content" class="container"></div>
+
+</div> <!-- Ned of #main-content -->
+
+<footer class="panel-footer">
+	<div class="container">
+		<div class="row">
+		  <section id="hours" class="col-sm-4">
+			<span>Hours:</span><br>
+			Mon-Fri: 09-17h<br>
+			Sat: 10-16h<br>
+			Sun: Closed
+			<hr class="visible-xs">
+		  </section>
+		  <section id="address" class="col-sm-4">
+			<span>Address:</span><br>
+			Plaža Sv. Martin<br>
+			Mali Lošinj 51550<br>
+			<p>* The address is subject to change</p>
+			<hr class="visible-xs">
+		  </section>
+		  <section id="testimonials" class="col-sm-4">
+			<p>"Best movie site ever made!"</p>
+			<p>"I always hated IMDBs site, this one is refreshing and easy to navigate"</p>
+		  </section>
+		</div>
+		<div class="text-center">&copy; Copyright Videoteka Komandos 2021</div>
+	</div>
+	
+</footer>
+
+
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/ajax-utils.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

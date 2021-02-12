@@ -1,0 +1,39 @@
+{
+  "movies": [
+    {
+      "id": 21,
+      "short_name": "C1",
+      "name": "American Pie",
+      "description": "High school graduates try to loose their virginity before prom",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 22,
+      "short_name": "C2",
+      "name": "Monty Python and The Holy Grail",
+      "description": "Group of crusaders go on a sacred quest to recover the Holy Grail",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    },
+    {
+      "id": 23,
+      "short_name": "C3",
+      "name": "Meet the Spartans",
+      "description": "Trashy parody",
+      "price_small": 2.00,
+      "price_large": 10.0,
+      "small_portion_name": "1day",
+      "large_portion_name": "7days"
+    }
+  ],
+  "category": {
+    "short_name": "C",
+    "name": "Comedy",
+    "special_instructions": "Story that tells about a series of funny, or comical events"
+  }
+}

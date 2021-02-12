@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "short_name": "A",
+    "name": "Action",
+    "special_instructions": "Movies packed with shooting, fighting and other actions scenes",
+    "url": "categories.json"
+  },
+  {
+    "id": 2,
+    "short_name": "C",
+    "name": "Comedy",
+    "special_instructions": "Story that tells about a series of funny, or comical events",
+    "url": "categories.json"
+  },
+  {
+    "id": 3,
+    "short_name": "D",
+    "name": "Drama",
+    "special_instructions": "Drama is a genre of narrative fiction (or semi-fiction) intended to be more serious than humorous in tone, focusing on in-depth development of realistic characters",
+    "url": "categories.json"
+  },
+  {
+    "id": 4,
+    "short_name": "F",
+    "name": "Fantasy",
+    "special_instructions": "Magic or supernatural forces, rather than technology",
+    "url": "categories.json"
+  },
+  {
+    "id": 5,
+    "short_name": "H",
+    "name": "Horror",
+    "special_instructions": "Deliberately scare or frighten the audience, through suspense, violence or shock",
+    "url": "categories.json"
+  },
+  {
+    "id": 6,
+    "short_name": "R",
+    "name": "Romance",
+    "special_instructions": "Love stories that primarily focus on the relationship between the main character",
+    "url": "categories.json"
+  }
+]
