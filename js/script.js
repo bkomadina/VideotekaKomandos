@@ -14,9 +14,9 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
   // which is set up above will not be called.
   // Refer to issue #28 in the repo.
   // Solution: force focus on the element that the click event fired on
-  $("#navbarToggle").click(function (event) {
-    $(event.target).focus();
-  });
+  // $("#navbarToggle").click(function (event) {
+  //   $(event.target).focus();
+  // });
 });
 
 (function (global) {
@@ -62,16 +62,23 @@ var insertProperty = function (string, propName, propValue) {
 var switchCategoriesToActive = function () {
   // Remove 'active' from home button
   var classes = document.querySelector("#navHomeButton").className;
+  //Finds ALL ("g") #navHomeButton "active" classes and replaces with empty ""
   classes = classes.replace(new RegExp("active", "g"), "");
   document.querySelector("#navHomeButton").className = classes;
   
-  // Remove 'active from Awards button
+  // Remove 'active' from Awards button
   var classes = document.querySelector("#navAwardsButton").className;
   classes = classes.replace(new RegExp("active", "g"), "");
   document.querySelector("#navAwardsButton").className = classes;
 
+  // Remove 'active' from About button
+  var classes = document.querySelector("#navAboutButton").className;
+  classes = classes.replace(new RegExp("active", "g"), "");
+  document.querySelector("#navAboutButton").className = classes;
+
   // Add 'active' to Categories button if not already there
   classes = document.querySelector("#navCategoriesButton").className;
+  //If "active" doesnt exist
   if (classes.indexOf("active") == -1) {
     classes += " active";
     document.querySelector("#navCategoriesButton").className = classes;
@@ -90,6 +97,11 @@ var switchAwardsToActive = function () {
   classes = classes.replace(new RegExp("active", "g"), "");
   document.querySelector("#navCategoriesButton").className = classes;
 
+  // Remove 'active' from About button
+  var classes = document.querySelector("#navAboutButton").className;
+  classes = classes.replace(new RegExp("active", "g"), "");
+  document.querySelector("#navAboutButton").className = classes;
+
   // Add 'active' to Awards button if not already there
   classes = document.querySelector("#navAwardsButton").className;
   if (classes.indexOf("active") == -1) {
@@ -106,7 +118,17 @@ var switchAboutToActive = function () {
   classes = classes.replace(new RegExp("active", "g"), "");
   document.querySelector("#navHomeButton").className = classes;
 
-  // Add 'active' to menu button if not already there
+  // Remove 'active from Categories button
+  var classes = document.querySelector("#navCategoriesButton").className;
+  classes = classes.replace(new RegExp("active", "g"), "");
+  document.querySelector("#navCategoriesButton").className = classes;
+
+  // Remove 'active' from Awards button
+  var classes = document.querySelector("#navAwardsButton").className;
+  classes = classes.replace(new RegExp("active", "g"), "");
+  document.querySelector("#navAwardsButton").className = classes;
+
+  // Add 'active' to About button if not already there
   classes = document.querySelector("#navAboutButton").className;
   if (classes.indexOf("active") == -1) {
     classes += " active";
