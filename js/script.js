@@ -23,14 +23,13 @@ $(function () { // Same as document.addEventListener("DOMContentLoaded"...
 
 var dc = {};
 
-var homeHtml = "snippets/home-snippet.html";
+var homeHtmlUrl = "snippets/home-snippet.html";
 var allCategoriesUrl = "categories.json";
 var categoriesTitleHtml = "snippets/categories-title-snippet.html";
 var categoryHtml = "snippets/category-snippet.html";
 var moviesUrl = "movies.json";
 var moviesTitleHtml = "snippets/movies-title.html";
 var movieHtml = "snippets/movie.html";
-
 var awardsHtml = "snippets/awards.html";
 var aboutHtml = "snippets/about.html";
 
@@ -56,7 +55,7 @@ var insertProperty = function (string, propName, propValue) {
   string = string
     .replace(new RegExp(propToReplace, "g"), propValue);
   return string;
-}
+};
 
 // Remove the class 'active' from home and switch to Categories button
 var switchCategoriesToActive = function () {
@@ -136,20 +135,31 @@ var switchAboutToActive = function () {
   }
 };
 
-
+// Changed this code to retrieve all categories from the server instead of
+// simply requesting home HTML snippet. We now also have another function
+// called buildAndShowHomeHTML that will receive all the categories from the server
+// and process them: choose random category, retrieve home HTML snippet, insert that
+// random category into the home HTML snippet, and then insert that snippet into our
+// main page (index.html)
 // On page load (before images or CSS)
 document.addEventListener("DOMContentLoaded", function (event) {
 
 // On first load, show home view
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
-  homeHtml,
-  function (responseText) {
-    document.querySelector("#main-content")
-      .innerHTML = responseText;
-  },
-  false);
+  allCategoriesUrl,
+  buildAndShowHomeHTML,
+  true);
 });
+
+// Load top rated
+dc.loadTopRated = function (categoryShort) {
+  showLoading("#main-content");
+  $ajaxUtils.sendGetRequest(
+    moviesUrl + categoryShort,
+    buildAndShowMoviesHTML);
+};
+
 
 // Load the categories view
 dc.loadCategories = function () {
@@ -197,6 +207,23 @@ dc.loadAwards = function () {
     false);
 };
 
+// Builds HTML for Home page based on json categories
+function buildAndShowHomeHTML (categories) {
+  $ajaxUtils.sendGetRequest(
+    homeHtmlUrl,
+    function (homeHtml) {
+      var chosenCategoryShortName = chooseRandomCategory(categories).short_name;
+      var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", "'"+chosenCategoryShortName+"'");
+      insertHtml("#main-content", homeHtmlToInsertIntoMainPage);
+    },
+    false);
+};
+
+// Chooses random category from given json
+function chooseRandomCategory (categories) {
+  var randomArrayIndex = Math.floor(Math.random() * categories.length);
+  return categories[randomArrayIndex];
+};
 
 // Builds HTML for the categories page based on the data
 // from the server
